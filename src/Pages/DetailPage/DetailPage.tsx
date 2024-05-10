@@ -27,7 +27,7 @@ const DetailPage = () => {
   }, [owner, repoName]);
   
   return (
-    <div>
+    <div data-testid="detail-component">
       {repoDetails ? (
         <div>
           <CardItem repoDetails={repoDetails} />
