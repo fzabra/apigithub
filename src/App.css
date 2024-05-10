@@ -1,0 +1,55 @@
+:root {
+  a{
+    color: var(--bs-gray-500);
+  }
+  .card-link{
+    color: var(--bs-white);
+    text-decoration: none;
+    background-color: var(--bs-gray-dark);
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+  }
+  .btn-primary {
+    color: var(--bs-white);
+    background-color: var(--bs-black);
+    border-color: var(--primary);
+  }
+   .btn-primary:hover,
+   :not(.btn-check)+.btn:active {
+    background-color: darken(var(--primary), 10%);
+    border-color: darken(var(--primary), 10%);
+  }
+  .list-group-{
+    height: 25rem;
+    overflow: auto;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .list-group-{
+      height: 15rem;
+      overflow: auto;
+    }
+  }
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 20vmin;
+  pointer-events: none;
+  margin-bottom: 2rem;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
