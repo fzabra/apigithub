@@ -43,7 +43,7 @@ export async function getRepoDetails(ownerLogin: string, repoName: string): Prom
     console.log("repo", repo)
     return repo;
   } catch (error) {
-    console.error('Erro ao buscar detalhes do repositório:', error);
+    console.error('Error fetching repository details:', error);
     return null;
   }
 }

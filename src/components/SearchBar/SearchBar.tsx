@@ -30,7 +30,7 @@ const SearchBar = () => {
             }
             setSearchResults(repos);
         } catch (error) {
-            console.error('Erro ao buscar repositórios:', error);
+            console.error('Error when fetching repositories:', error);
             setSearchResults([]);
         }
     };
