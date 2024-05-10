@@ -3,7 +3,7 @@ import SearchBar from '../../components/SearchBar/SearchBar';
 
 const Home = () => {
   return (
-    <div>
+    <div data-testid="home-component">
       <SearchBar/>
     </div>
   )
