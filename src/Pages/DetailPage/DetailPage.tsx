@@ -36,7 +36,7 @@ const DetailPage = () => {
         <p>Loading...</p>
       )}
       <Link to="/">
-        <Button className="mt-3" data-bs-theme="dark" >Back</Button>
+        <Button className="mt-3 mb-3" data-bs-theme="dark" >Back</Button>
       </Link>
     </div>
   );
