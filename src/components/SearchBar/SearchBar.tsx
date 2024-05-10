@@ -46,7 +46,7 @@ const SearchBar = () => {
             data-bs-theme="dark"
             />
             <Button type="submit" variant="outline-secondary">
-            Button
+            Search
             </Button>
         </InputGroup>
         {searchResults.length > 0 && (
