@@ -10,7 +10,9 @@ test('renders logo', () => {
       <App />
     </Router>
   );
+  // Finding the logo element
   const logoElement = screen.getByAltText('logo');
+  // Asserting that the logo element is in the document
   expect(logoElement).toBeInTheDocument();
 });
 
