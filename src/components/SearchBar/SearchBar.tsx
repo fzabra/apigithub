@@ -30,7 +30,7 @@ const SearchBar = () => {
             }
             setSearchResults(repos);
         } catch (error) {
-            console.error('Erro ao buscar repositórios:', error);
+            console.error('Error when fetching repositories:', error);
             setSearchResults([]);
         }
     };
@@ -46,7 +46,7 @@ const SearchBar = () => {
             data-bs-theme="dark"
             />
             <Button type="submit" variant="outline-secondary">
-            Button
+            Search
             </Button>
         </InputGroup>
         {searchResults.length > 0 && (

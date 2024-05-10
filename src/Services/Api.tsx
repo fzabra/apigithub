@@ -26,7 +26,6 @@ export async function getRepos(query: string): Promise<InterfacePublicRepo[] | R
   const reposFilteredURL = `${API_URL}search/repositories?q=${query}{&page,per_page,sort,order}`;
   try {
     const result = await fetchData(reposFilteredURL);
-    console.log("result", result)
     return result.items;
   } catch (error) {
     return { message: 'Failed to fetch repositories', error };
@@ -40,10 +39,9 @@ export async function getRepoDetails(ownerLogin: string, repoName: string): Prom
 
   try {
     const repo = await fetchData(repoDetailsURL);
-    console.log("repo", repo)
     return repo;
   } catch (error) {
-    console.error('Erro ao buscar detalhes do repositório:', error);
+    console.error('Error fetching repository details:', error);
     return null;
   }
 }

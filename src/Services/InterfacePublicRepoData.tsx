@@ -7,9 +7,11 @@ export interface InterfacePublicRepo {
   stargazers_count: number;
   forks_count: number;
   url: string;
+  html_url: string;
   owner: {
     login: string;
     avatar_url: string;
     repos_url: string;
+    html_url: string;
   };
 }
